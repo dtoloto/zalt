@@ -1,0 +1,20 @@
+<ion-view title="Meus Cartões" id="page2">
+  <ion-content padding="true" class="has-header">
+    <div>
+      <img src="img/user60.png" style="display: block; width: 34%; height: auto; margin-left: auto; margin-right: auto;">
+    </div>
+    <h4 id="meusCartEs-heading2" style="color:#000000;font-weight:600;text-align:center;">{{usuario.nome}}</h4>
+    <h4 id="meusCartEs-heading3" style="color:#257AED;font-weight:400;text-align:center;">Limite Mensal: R${{usuario.limite | number: 2}}</h4>
+    <h4 id="meusCartEs-heading4" style="color:#08A05A;text-align:center;">Disponível: R${{usuario.totalDisponivel | number: 2}}</h4>
+    <div class="spacer" style="width: 300px; height: 21.9965px;"></div>
+    <ion-list id="meusCartEs-list4">
+      <a>
+        <ion-item class="cartao item-icon-left" ng-repeat="dependente in dependentes" ng-click="selecionaDependente(dependente)">
+          <i class="icon ion-card"></i>
+          <b>{{dependente.nome}}</b>
+          <p class="limiteDependente">Disponível: R${{dependente.totalDisponivel | number: 2}}</p>
+        </ion-item>
+      </a>
+    </ion-list>
+  </ion-content>
+</ion-view>

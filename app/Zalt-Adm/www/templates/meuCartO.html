@@ -1,0 +1,32 @@
+<ion-view title="Meu Cartão" id="page6" style="background-color:#EFEFEF;">
+  <ion-content padding="false" class="has-header">
+    <ion-list id="meuCartO-list5">
+      <ion-item class="item-icon-left">
+        <i class="icon ion-android-person"></i>
+        <p>{{dependente.nome}}</p>
+        <span class="limiteDependente">R$ {{dependente.totalDisponivel | number: 2}}</span>
+      </ion-item>
+    </ion-list>
+    <div id="meuCartO-container3" class="valorCartao">
+      <h4 id="meuCartO-heading5"  style="color:#257AED;">Limite Mensal: R$ {{dependente.limite | number: 2}}</h4>
+      <h4 id="meuCartO-heading6"  style="color:#257AED;font-weight:400;">Controle Semanal: R$ {{controleSemanal | number: 2}}</h4>
+      <h4 id="meuCartO-heading7"  style="color:#257AED;font-weight:300;">Controle Diário: R$ {{controleDiario | number: 2}}</h4>
+    </div>
+    <form id="meuCartO-form1" class="list">
+      <ion-item class="range range-positive" id="meuCartO-range1">
+        <input type="range" ng-init="dependente.limite" min="0" max="{{limiteUsuario/quantidadeDependentes}}" step="10" ng-model="dependente.limite" ng-change="atualizaControle()">
+      </ion-item>
+      <ion-item class="item-divider" id="meuCartO-list-item-divider1"> </ion-item>
+      <ion-item class="item-icon-right" id="meuCartO-list-item5" ui-sref="tabsController.estabelecimentos">Estabelecimentos
+        <i class="icon ion-ios-arrow-forward"></i>
+      </ion-item>
+      <ion-item class="item-icon-right" id="meuCartO-list-item6" ui-sref="tabsController.recibos">Recibos
+        <i class="icon ion-ios-arrow-forward"></i>
+      </ion-item>
+      <ion-item class="item-divider" id="meuCartO-list-item-divider2"> </ion-item>
+      <ion-item class="item-icon-right bloquearCartao" ng-click="bloquearCartao()" id="meuCartO-list-item9">Bloqueio Temporário
+        <i class="icon ion-locked"></i>
+      </ion-item>
+    </form>
+  </ion-content>
+</ion-view>

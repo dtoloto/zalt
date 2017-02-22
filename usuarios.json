@@ -1,0 +1,138 @@
+{
+    "nome": "Pedro",
+    "senha": "123456",
+    "cpf": "123",
+    "email": "",
+    "id": "",
+    "limite": 2000.00,
+    "totalDisponivel": 800.00,
+    "dependentes": [
+
+            {
+                "nome": "Daniel",
+                "senha": "123456",
+                "cpf": "1234",
+                "email": "",
+                "id": "",
+                "limite": 200.00,
+                "totalDisponivel": 150.00,
+                "statusCartao": true,
+
+                "recibos":[
+                  {
+                    "categoria": "Bares e Baladas",
+                    "nomeEstabelecimento": "Laroc",
+                    "valor": 120.00,
+                    "data": "11/DEZ/16"
+                  },
+                  {
+                    "categoria": "Restaurantes",
+                    "nomeEstabelecimento": "Casa do Sogro",
+                    "valor": 22.90,
+                    "data": "10/FEV/17"
+                  }
+                ],
+
+                "faturas":[],
+
+                "estabelecimentos": [
+                  {
+                    "categoria": "Bares e baladas",
+                    "status": true
+                  },
+                  {
+                    "categoria": "Cinemas",
+                    "status": true
+                  },
+                  {
+                    "categoria": "Livrarias",
+                    "status": true
+                  },
+                  {
+                    "categoria": "Lojas de Roupas",
+                    "status": true
+                  },
+                  {
+                    "categoria": "Supermercados",
+                    "status": true
+                  },
+                  {
+                    "categoria": "Restaurantes",
+                    "status": true
+                  },
+                  {
+                    "categoria": "Transportes",
+                    "status": true
+                  },
+                  {
+                    "categoria": "Outros",
+                    "status": true
+                  }
+                ]
+            },
+            {
+                "nome": "Rafael",
+                "senha": "123456",
+                "cpf": "",
+                "email": "",
+                "id": "",
+                "limite": 400.00,
+                "totalDisponivel": 250.00,
+                "statusCartao": true,
+
+                "recibos":[
+                  {
+                    "categoria": "Cinemas",
+                    "nomeEstabelecimento": "Cinemark",
+                    "valor": 12.90,
+                    "data": "11/JAN/17"
+                  },
+                  {
+                    "categoria": "Restaurantes",
+                    "nomeEstabelecimento": "Casa do Sogro",
+                    "valor": 22.90,
+                    "data": "10/FEV/17"
+                  }
+                ],
+
+                "faturas":[],
+
+                "estabelecimentos": [
+                  {
+                    "categoria": "Bares e baladas",
+                    "status": true
+                  },
+                  {
+                    "categoria": "Cinemas",
+                    "status": true
+                  },
+                  {
+                    "categoria": "Livrarias",
+                    "status": true
+                  },
+                  {
+                    "categoria": "Lojas de Roupas",
+                    "status": true
+                  },
+                  {
+                    "categoria": "Supermercados",
+                    "status": true
+                  },
+                  {
+                    "categoria": "Restaurantes",
+                    "status": true
+                  },
+                  {
+                    "categoria": "Transportes",
+                    "status": true
+                  },
+                  {
+                    "categoria": "Outros",
+                    "status": true
+                  }
+                ]
+            }
+ ]
+
+
+}

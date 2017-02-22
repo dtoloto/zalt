@@ -1,0 +1,9 @@
+/* Empty. Add your own CSS if you like */
+.list.list-inset.autenticacao{
+	background-color: #257aed;
+	color: #fff;
+}
+
+.grade-a.platform-browser.platform-ios.platform-ios9.platform-ios9_1.platform-ready{
+    background: linear-gradient(to bottom right, #257aed, #0c5ac4) !important;
+}

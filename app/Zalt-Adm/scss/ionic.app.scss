@@ -1,0 +1,161 @@
+$ionicons-font-path: "../lib/ionic/fonts" !default;
+@import "../www/lib/ionic/scss";
+span.dataRecibo {
+	float: right;
+}
+
+ion-item.cartao.item-icon-left {
+	margin-bottom: 10px;
+}
+
+.login {
+	margin-right: 10px;
+	margin-left: 10px;
+	margin-bottom: 0px;
+	font-weight: bold;
+}
+
+a.login.login-btn {
+	background-color: #257aed;
+	color: white;
+	width: 100%;
+}
+
+button.button-light.button-block.button-outline.login.invite-btn {
+	border: 2px solid #257aed;
+	color: #257aed;
+}
+
+.sliderText {
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+.bar.bar-stable .title {
+	color: #fff;
+	// background-color: #007fff;
+}
+
+[nav-bar-transition="ios"] [nav-bar="active"] .bar, [nav-bar-transition="ios"] [nav-bar="entering"] .bar {
+	color: #fff;
+	//background-color: #007fff;
+	background: linear-gradient(to bottom right, #257aed, #0c5ac4);
+}
+
+.button.back-button.buttons.button-clear.header-item {
+	color: #fff;
+}
+
+.button.button-icon.button-clear.ion-navicon {
+	color: #fff;
+}
+
+.item-icon-left.menuOption.item {
+	background-color: transparent;
+	color: white;
+}
+
+.item-icon-left.menuOption.item a {
+	background-color: transparent;
+	color: white;
+}
+
+a {
+	text-decoration: none;
+}
+
+.limiteDependente {
+	font-weight: bold;
+	color: #08A05A;
+}
+
+p.limiteDependente {
+	font-weight: bold;
+	color: #08A05A;
+}
+
+.valorCartao {
+	margin-top: -10px;
+	padding: 10px;
+	background-color: #fff;
+}
+
+.bloquearCartao {
+	color: #97080E;
+	background-color: #fff;
+	font-weight: bold;
+	//border: 3px solid #9C0F0F;
+}
+
+p.debito {
+	color: #E44040;
+}
+
+p.faturaAberta {
+	font-weight: bold;
+	color: #257aed;
+}
+
+p.faturaPaga {
+	font-weight: bold;
+	color: #08A05A;
+}
+
+p.vencimento {
+	font-weight: bold;
+}
+
+ion-item.cartao.fatura {
+	text-align: center;
+}
+
+.topFixed .faturaAberta.detalhe {
+	font-size: 20px;
+	margin-top: 6px;
+	margin-bottom: 6px;
+}
+
+.cartao.fatura.top-container {
+	position: fixed;
+	width: 100%;
+	z-index: 100;
+	margin-top: 50px;
+}
+
+.button.button-light.button-block.button-outline.login.invite-btn: active {
+	background-color: #257aed;
+	color: white;
+}
+
+a.login.login-btn: hover {
+	background-color: #257aed;
+	color: white;
+	width: 100%;
+}
+
+a.login.login-btn: active {
+	background-color: #fff;
+	border: 2px solid #257aed;
+	color: #257aed;
+}
+
+.menuSide {
+	background: linear-gradient(to bottom right, #257aed, #0c5ac4);
+}
+
+.tabs-striped.tabs-stable .tab-item.tab-item-active {
+	color: #257aed;
+	border-color: #257aed;
+}
+
+.bar-stable.bar.bar-header.has-tabs-top {
+	background-color: #257aed;
+}
+
+.desbloquearCartao{
+	color: #08A05A !important;
+}
+
+.bkgAutenticacao{
+    background: linear-gradient(to bottom right, #257aed, #0c5ac4);
+}

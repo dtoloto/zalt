@@ -1,0 +1,13 @@
+<ion-view title="Meus Recibos" id="page6">
+  <ion-content padding="false" class="has-header">
+
+    <ion-item class="item-icon-left" ng-repeat="recibo in recibos">
+      <i class="icon ion-android-restaurant"></i>
+      <b>{{recibo.categoria}}</b>
+      <span class="dataRecibo">{{recibo.data}}</span>
+      <p>{{recibo.nomeEstabelecimento}}</p>
+      <p class="debito">R${{recibo.valor | number: 2}}</p>
+    </ion-item>
+
+  </ion-content>
+</ion-view>

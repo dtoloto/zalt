@@ -1,0 +1,13 @@
+<ion-view title="Estabelecimentos" id="page7" style="background-color:#EEEEEE;">
+  <ion-content padding="false" class="has-header">
+    <ion-list id="estabelecimentos-list6">
+      <ion-item class="item-icon-left">
+        <i class="icon ion-android-person"></i>
+        <p>{{dependente.nome}}</p>
+        <span class="limiteDependente">R$ {{dependente.totalDisponivel | number: 2}}</span>
+      </ion-item>
+      <ion-item class="item-divider" id="estabelecimentos-list-item-divider5"> </ion-item>
+      <ion-toggle toggle-class="toggle-positive" id="estabelecimentos-toggle2" ng-repeat="estabelecimento in estabelecimentos" ng-model="estabelecimento.status">{{estabelecimento.categoria}} e {{estabelecimento.status}}</ion-toggle>
+    </ion-list>
+  </ion-content>
+</ion-view>

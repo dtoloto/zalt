@@ -1,0 +1,26 @@
+<ion-view title="Autenticação" hide-nav-bar="true" class="bkgAutenticacao" style="background: linear-gradient(to bottom right, #257aed, #0c5ac4);">
+  <ion-content padding="false" class="manual-ios-statusbar-padding" scroll="false">
+    <div class="spacer" style="width: 320px; height: 85px;"></div>
+    <div>
+      <img src="https://s3.amazonaws.com/ionic-io-static/g9QCpAlrQuy73l099ym1_zaltLogo.png" style="display: block; width: 50%; height: auto; margin-left: auto; margin-right: auto;">
+    </div>
+    <div class="spacer" style="width: 320px; height: 50px;"></div>
+    <div class="list list-inset autenticacao">
+      <label class="item item-input">
+        <input type="text" placeholder="CPF" ng-model="cpf">
+      </label>
+      <label class="item item-input">
+        <input type="password" placeholder="senha" ng-model="senha">
+      </label>
+    </div>
+    <div style="text-align:center;" class="show-list-numbers-and-dots">
+      <p style="color:#FFFFFF;font-size:17px;" ng-if="erro">CPF e/ou Senha inválidos</p>
+    </div>
+    <div class="row">
+      <a class="button button-light  button-block button-outline login login-btn" ng-click="login(cpf, senha)">Login</a>
+    </div>
+    <div style="text-align:center;" class="show-list-numbers-and-dots">
+      <p style="color:#FFFFFF;font-size:17px;">Esqueci minha senha</p>
+    </div>
+  </ion-content>
+</ion-view>

@@ -1,0 +1,31 @@
+<ion-view title="autenticacao" hide-nav-bar="true" class="bkgAutenticacao">
+  <ion-content padding="false" class="manual-ios-statusbar-padding" scroll="false">
+    <form class="list">
+      <div class="spacer" style="width: 320px; height: 75.9965px;"></div>
+    </form>
+    <div>
+      <img src="img/pm7kODJTCmt3NALRMXNT_dependente.png" style="display: block; width: 80%; height: auto; margin-left: auto; margin-right: auto;">
+    </div>
+    <div class="spacer" style="width: 320px; height: 44.9931px;"></div>
+    <div class="list list-inset autenticacao">
+      <label class="item item-input">
+        <input type="text" placeholder="CPF Administrador" ng-model="cpf">
+      </label>
+      <label class="item item-input">
+        <input type="text" placeholder="CPF Dependente" ng-model="cpfDep">
+      </label>
+      <label class="item item-input">
+        <input type="password" placeholder="Senha" ng-model="senhaDep">
+      </label>
+    </div>
+    <div style="text-align:center;" class="show-list-numbers-and-dots">
+      <p style="color:#FFFFFF;font-size:17px;" ng-if="erro">CPF e/ou Senha inválidos</p>
+    </div>
+    <div class="row">
+      <a class="button button-light  button-block button-outline login login-btn" ng-click="login(cpf, cpfDep, senhaDep)">Login</a>
+    </div>
+    <div style="text-align:center;" class="show-list-numbers-and-dots">
+      <p style="color:#FFFFFF;font-size:17px;">Esqueci minha senha</p>
+    </div>
+  </ion-content>
+</ion-view>
